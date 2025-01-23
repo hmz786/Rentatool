@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/accueilFragment"
+        android:enabled="true"
+        android:icon="@drawable/accueil_selector"
+        android:title="@string/nav_accueil" />
+    <item
+        android:id="@+id/ajouterFragment"
+        android:enabled="true"
+        android:icon="@drawable/publier_selector"
+        android:title="@string/nav_publier" />
+    <item
+        android:id="@+id/profil_utilisateur"
+        android:enabled="true"
+        android:icon="@drawable/profil_selector"
+        android:title="@string/nav_profil" />
+    <!--item
+        android:id="@+id/parametresFragment"
+        android:enabled="true"
+        android:icon="@drawable/parametres_selector"
+        android:title="@string/nav_paramètres" /-->
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/accueilFragment">
+    <fragment
+        android:id="@+id/accueilFragment"
+        android:name="com.projet.app_location_outils.vue.AccueilVue"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" >
+        <action
+            android:id="@+id/action_afficher_filtres_accueil"
+            app:destination="@id/accueilFiltresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parametresFragment"
+        android:name="com.projet.app_location_outils.vue.ParametresFragment"
+        android:label="fragment_parametres"
+        tools:layout="@layout/fragment_parametres" />
+    <fragment
+        android:id="@+id/accueilFiltresFragment"
+        android:name="com.projet.app_location_outils.vue.FiltresVue"
+        android:label="fragment_accueil_filtres"
+        tools:layout="@layout/fragment_filtres" />
+    <fragment
+        android:id="@+id/outilsFragment"
+        android:name="com.projet.app_location_outils.vue.OutilsFragment"
+        android:label="fragment_outils"
+        tools:layout="@layout/fragment_outils" >
+        <action
+            android:id="@+id/action_outilsFragment_to_profil_utilisateur"
+            app:destination="@id/profil_utilisateur" />
+    </fragment>
+    <fragment
+        android:id="@+id/voirFragment"
+        android:name="com.projet.app_location_outils.vue.VoirFragment"
+        android:label="fragment_voir"
+        tools:layout="@layout/fragment_voir" />
+    <fragment
+        android:id="@+id/ajouterFragment"
+        android:name="com.projet.app_location_outils.vue.AjouterVue"
+        android:label="fragment_ajouter"
+        tools:layout="@layout/fragment_ajouter" />
+    <fragment
+        android:id="@+id/profil_utilisateur"
+        android:name="com.projet.app_location_outils.vue.profil_utilisateur"
+        android:label="fragment_profil_utilisateur"
+        tools:layout="@layout/fragment_profil_utilisateur" />
+    
+
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.projet.app_location_outils.vue.profil_utilisateur"
+        android:label="fragment_profil_utilisateur"
+        tools:layout="@layout/fragment_profil_utilisateur" />
+</navigation>
